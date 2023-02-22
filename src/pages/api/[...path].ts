@@ -68,13 +68,13 @@ export default async function handler(
     .map((data) => data?.filter((data) => data?.stopId?.includes("N"))[0])
     .filter((data) => data)
     .map((data) => data?.arrival?.time)
-    .filter((data) => data as number * 1000 > now)
+    .filter((data) => (data as number) * 1000 > now)
     .sort()
   const downtown = stopData
     .map((data) => data?.filter((data) => data?.stopId?.includes("S"))[0])
     .filter((data) => data)
     .map((data) => data?.arrival?.time)
-    .filter((data) => data as number * 1000 > now)
+    .filter((data) => (data as number) * 1000 > now)
     .sort()
 
   const uptownFormatted = uptown
@@ -134,7 +134,7 @@ export default async function handler(
       color: "ffffff",
     },
     {
-      text: "Uptown",
+      text: direction === "north" ? "Uptown" : "Downtown",
       x: 20,
       y: 9,
       size: 2,
