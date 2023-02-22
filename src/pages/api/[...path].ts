@@ -142,7 +142,7 @@ export default async function handler(
     },
     {
       text:
-        finalStops[0].relative !== 0
+        finalStops[0].relative >= 1
           ? `${finalStops[0].relative} minute${
               finalStops[0].relative !== 1 ? "s" : ""
             }`
