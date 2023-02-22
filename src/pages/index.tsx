@@ -6,7 +6,7 @@ import customApiBox from "public/custom-api-box.png"
 
 export default function HomePage() {
   return (
-    <Container mt={50} size='lg'>
+    <Container mt={50} size="lg">
       <Grid gutterLg={150}>
         <Grid.Col lg={6} sm={12}>
           <Stack>
@@ -38,16 +38,20 @@ export default function HomePage() {
                   http://ticker.local
                 </a>
               </List.Item>
-              <List.Item>
-                Set all options in the Layout box to Custom API
-              </List.Item>
-              <Image src={layoutBox} alt="layout-settings" />
-              <List.Item>
-                In the Custom API box set the host to subway-ticker.vercel.app
-                and the path to the path generated from selecting your train
-                options
-              </List.Item>
-              <Image src={customApiBox} alt="custom-api-settings" />
+              <Stack mb='md'>
+                <List.Item>
+                  Set all options in the Layout box to Custom API
+                </List.Item>
+                <Image src={layoutBox} alt="layout-settings" />
+              </Stack>
+              <Stack>
+                <List.Item>
+                  In the Custom API box set the host to subway-ticker.vercel.app
+                  and the path to the path generated from selecting your train
+                  options
+                </List.Item>
+                <Image src={customApiBox} alt="custom-api-settings" />
+              </Stack>
             </List>
           </Stack>
         </Grid.Col>
