@@ -98,10 +98,10 @@ export default async function handler(
 
   //Subtract a minute to account for api latency and ticker refresh every 60 seconds (rather be early than late)
   const nextUptown = uptown.map((data) =>
-    Math.round(((data as number) * 1000 - now - 60) / 1000 / 60)
+    Math.round(((data as number) * 1000 - now) / 1000 / 60 - 1)
   )
   const nextDowntown = downtown.map((data) =>
-    Math.round(((data as number) * 1000 - now - 60) / 1000 / 60)
+    Math.round(((data as number) * 1000 - now) / 1000 / 60 - 1)
   )
   const finalUptown = nextUptown
     .map((data, i) => ({
