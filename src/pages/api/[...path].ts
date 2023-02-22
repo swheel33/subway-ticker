@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 import gtfs from "gtfs-realtime-bindings"
 import { getStopMap, stops } from "lib/stops"
+const logger = require('pino')
 
 const validTrains = [
   "A",
@@ -109,7 +110,7 @@ export default async function handler(
     .map((data: any) => data?.arrival?.time?.low)
     .filter((data) => data * 1000 > now)
     .sort()
-console.log(uptown)
+  logger.info(uptown)
   const downtown = stopData
     .map((data) => data?.filter((data) => data?.stopId?.includes("S"))[0])
     .filter((data) => data)
