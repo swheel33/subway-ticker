@@ -89,14 +89,14 @@ export default async function handler(
     )
     .map((data) => data.filter((data) => (data?.length as number) > 0))
     .filter((data) => (data?.length as number) > 0)[0]
-    console.log(stopData)
+
   const uptown = stopData
     .map((data) => data?.filter((data) => data?.stopId?.includes("N"))[0])
     .filter((data) => data)
     .map((data: any) => data?.arrival?.time?.low)
     .filter((data) => data * 1000 > now)
     .sort()
-
+console.log(uptown)
   const downtown = stopData
     .map((data) => data?.filter((data) => data?.stopId?.includes("S"))[0])
     .filter((data) => data)
