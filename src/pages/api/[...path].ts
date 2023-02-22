@@ -103,7 +103,6 @@ export default async function handler(
     )
     .map((data) => data.filter((data) => (data?.length as number) > 0))
     .filter((data) => (data?.length as number) > 0)[0]
-console.log(stopData)
   const uptown = stopData
     .map((data) => data?.filter((data) => data?.stopId?.includes("N"))[0])
     .filter((data) => data)
