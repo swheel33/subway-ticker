@@ -1,4 +1,4 @@
-import { stops } from "lib/stops"
+import { stops } from "lib/contants"
 
 const getUniqueValues = (arr: any[]) =>
   arr?.filter((element, index, array) => array.indexOf(element) === index)

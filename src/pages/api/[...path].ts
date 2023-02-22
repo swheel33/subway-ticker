@@ -1,33 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 import gtfs from "gtfs-realtime-bindings"
 import { getStopMap, getTrainSet } from "lib/helpers"
-
-const validTrains = [
-  "A",
-  "C",
-  "E",
-  "B",
-  "D",
-  "F",
-  "M",
-  "G",
-  "J",
-  "Z",
-  "N",
-  "Q",
-  "R",
-  "W",
-  "L",
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-]
-
-
+import { validTrains } from "lib/contants"
 
 export default async function handler(
   req: NextApiRequest,

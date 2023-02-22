@@ -184,32 +184,33 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@floating-ui/core@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.0.2.tgz#d06a66d3ad8214186eda2432ac8b8d81868a571f"
-  integrity sha512-Skfy0YS3NJ5nV9us0uuPN0HDk1Q4edljaOhRBJGDWs9EBa7ZVMYBHRFlhLvvmwEoaIM9BlH6QJFn9/uZg0bACg==
+"@floating-ui/core@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.2.1.tgz#074182a1d277f94569c50a6b456e62585d463c8e"
+  integrity sha512-LSqwPZkK3rYfD7GKoIeExXOyYx6Q1O4iqZWwIehDNuv3Dv425FIAE8PRwtAx1imEolFTHgBEcoFHm9MDnYgPCg==
 
-"@floating-ui/dom@^1.0.5":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.0.6.tgz#e42393ec381a4fe96673fbcee137a95e86c93ebc"
-  integrity sha512-kt/tg1oip9OAH1xjCTcx1OpcUpu9rjDw3GKJ/rEhUqhO7QyJWfrHU0DpLTNsH67+JyFL5Kv9X1utsXwKFVtyEQ==
+"@floating-ui/dom@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.2.1.tgz#8f93906e1a3b9f606ce78afb058e874344dcbe07"
+  integrity sha512-Rt45SmRiV8eU+xXSB9t0uMYiQ/ZWGE/jumse2o3i5RGlyvcbqOF4q+1qBnzLE2kZ5JGhq0iMkcGXUKbFe7MpTA==
   dependencies:
-    "@floating-ui/core" "^1.0.2"
+    "@floating-ui/core" "^1.2.1"
 
-"@floating-ui/react-dom-interactions@^0.10.1":
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/@floating-ui/react-dom-interactions/-/react-dom-interactions-0.10.3.tgz#1d988aad169bf752b54c688db942f12e4fed61c5"
-  integrity sha512-UEHqdnzyoiWNU5az/tAljr9iXFzN18DcvpMqW+/cXz4FEhDEB1ogLtWldOWCujLerPBnSRocADALafelOReMpw==
+"@floating-ui/react-dom@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@floating-ui/react-dom/-/react-dom-1.3.0.tgz#4d35d416eb19811c2b0e9271100a6aa18c1579b3"
+  integrity sha512-htwHm67Ji5E/pROEAr7f8IKFShuiCKHwUC/UY4vC3I5jiSvGFAYnSYiZO5MlGmads+QqvUkR9ANHEguGrDv72g==
   dependencies:
-    "@floating-ui/react-dom" "^1.0.0"
+    "@floating-ui/dom" "^1.2.1"
+
+"@floating-ui/react@^0.19.1":
+  version "0.19.2"
+  resolved "https://registry.yarnpkg.com/@floating-ui/react/-/react-0.19.2.tgz#c6e4d2097ed0dca665a7c042ddf9cdecc95e9412"
+  integrity sha512-JyNk4A0Ezirq8FlXECvRtQOX/iBe5Ize0W/pLkrZjfHW9GUV7Xnq6zm6fyZuQzaHHqEnVizmvlA96e1/CkZv+w==
+  dependencies:
+    "@floating-ui/react-dom" "^1.3.0"
     aria-hidden "^1.1.3"
-
-"@floating-ui/react-dom@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@floating-ui/react-dom/-/react-dom-1.0.1.tgz#ee3524eab740b9380a00f4c2629a758093414325"
-  integrity sha512-UW0t1Gi8ikbDRr8cQPVcqIDMBwUEENe5V4wlHWdrJ5egFnRQFBV9JirauTBFI6S8sM1qFUC1i+qa3g87E6CLTw==
-  dependencies:
-    "@floating-ui/dom" "^1.0.5"
+    tabbable "^6.0.1"
 
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"
@@ -237,50 +238,58 @@
   dependencies:
     lodash "^4.17.21"
 
-"@mantine/core@5.8.3":
-  version "5.8.3"
-  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-5.8.3.tgz#812732eee438ec8e0b34a2e4046e4d931c4e94ae"
-  integrity sha512-KiGrBtKhqVfOM82SWvob7635EWGLdXq1q/62YS+x1pgbrOJSk22EU9HgAuL5cJqbZ5Dwggb2irlAhsZNiBx9oQ==
+"@mantine/core@5.10.4":
+  version "5.10.4"
+  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-5.10.4.tgz#6b792307fb5ad44c39440799ad69f06990be79b8"
+  integrity sha512-HdkAfZUFDEZ+aStoxT/2ohxV0gLl2I2q32+35XpH/z6qqyhjKqI7lA7E5SB6oddIFOjCesOhIE9ob2L56dgktg==
   dependencies:
-    "@floating-ui/react-dom-interactions" "^0.10.1"
-    "@mantine/styles" "5.8.3"
-    "@mantine/utils" "5.8.3"
-    "@radix-ui/react-scroll-area" "1.0.0"
+    "@floating-ui/react" "^0.19.1"
+    "@mantine/styles" "5.10.4"
+    "@mantine/utils" "5.10.4"
+    "@radix-ui/react-scroll-area" "1.0.2"
     react-textarea-autosize "8.3.4"
 
-"@mantine/hooks@5.8.3":
-  version "5.8.3"
-  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-5.8.3.tgz#d4b7e5cf03f082ab66fe9312e2edf5f0bcb97564"
-  integrity sha512-tXUm164GRGRMTtc+oXzJq8Pg4DW9EuURHcM+yV5Hw3kWNIGQzW/9E8ghjjyV2rS9DIdxB678rXAdeL6t2TVrPA==
-
-"@mantine/next@5.8.3":
-  version "5.8.3"
-  resolved "https://registry.yarnpkg.com/@mantine/next/-/next-5.8.3.tgz#7e5b71b0ff1044fe64e35cf535b5a795150f4d33"
-  integrity sha512-WSDezkEYF+Rb+6lcavWoia03YwNhz7c0BuW0vswc1XGoHvDATuzD2QUjdOqlJOCu+1q9X7SoEtrNLpDtD7iMiw==
+"@mantine/form@^5.10.4":
+  version "5.10.4"
+  resolved "https://registry.yarnpkg.com/@mantine/form/-/form-5.10.4.tgz#963dda8d8a4003203b86ab3e276961cc360380e2"
+  integrity sha512-gf/aNwvWzJwqo1C98yxLK0nJJxYIxYTI7nVQ/spFlaWY+arvXgybwPsdphxdo0j3aM4xJXjC52gDMme3gQrwNw==
   dependencies:
-    "@mantine/ssr" "5.8.3"
-    "@mantine/styles" "5.8.3"
+    fast-deep-equal "^3.1.3"
+    klona "^2.0.5"
 
-"@mantine/ssr@5.8.3":
-  version "5.8.3"
-  resolved "https://registry.yarnpkg.com/@mantine/ssr/-/ssr-5.8.3.tgz#84fd192e2d8e0d279f1b1bfef13c1d18da2d2b01"
-  integrity sha512-9rpi4mywegQRWxlFCxxmZNduLqjX6vK9KHtwCRKWL/gI8E24tXB9P/89FbBo3FqCFdosrPSirCtLBbygFo/ZBg==
+"@mantine/hooks@5.10.4":
+  version "5.10.4"
+  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-5.10.4.tgz#abe5d6e5ad2ec24840dec9ef742839376f0b0af8"
+  integrity sha512-HkdJWJgZvm9zkIv0gQpnobSdZ8SlGWWZwyORw3+b5SCbAn/VHq0hmGUL5uvCZ7FoFuaWC/ZTCDhospa5YVjkpg==
+
+"@mantine/next@5.10.4":
+  version "5.10.4"
+  resolved "https://registry.yarnpkg.com/@mantine/next/-/next-5.10.4.tgz#040580fd4e985ea79cd43b3fc6d20db4452dd0ca"
+  integrity sha512-EkMB7h/hC9kX+CBFkv0tan7Xip4SSNoccSOFxBKTRSKxpiN8M9DtQevFTzX7c7Kz+NirGcvUMlPr9+xAXLghTA==
   dependencies:
-    "@mantine/styles" "5.8.3"
+    "@mantine/ssr" "5.10.4"
+    "@mantine/styles" "5.10.4"
+
+"@mantine/ssr@5.10.4":
+  version "5.10.4"
+  resolved "https://registry.yarnpkg.com/@mantine/ssr/-/ssr-5.10.4.tgz#abec02783045b0d1492e589c3593c9a95322270c"
+  integrity sha512-DDJdo5iDfjLBHBCuXucCO4KGxJfbEK60yRLe/YBVn9jLIrR2x0sKODjxB/yNb46ULQ0sqhLNGD6OjP/qORQ4hw==
+  dependencies:
+    "@mantine/styles" "5.10.4"
     html-react-parser "1.4.12"
 
-"@mantine/styles@5.8.3":
-  version "5.8.3"
-  resolved "https://registry.yarnpkg.com/@mantine/styles/-/styles-5.8.3.tgz#efd4bc5e526fa4d4260ed40433f2a033081bf99e"
-  integrity sha512-dwE3sg4UUgzpKxKE1+deYM5GkHxeIWcFu+G81MUYd+DGPv50gXrHmibs03t5a2FydwUPui8IyJya4tIMOD87QQ==
+"@mantine/styles@5.10.4":
+  version "5.10.4"
+  resolved "https://registry.yarnpkg.com/@mantine/styles/-/styles-5.10.4.tgz#7870f6dff95e709d6af179ae188d31fcfd5c1caf"
+  integrity sha512-THJ9biAFwh3mxRkmSGMf1SDcgDyeIA1obs53W/HEiHAgbkU8HwgoJo1Vrq4aYQfEACU7KNnoRn9ICaVjMjrF/A==
   dependencies:
     clsx "1.1.1"
     csstype "3.0.9"
 
-"@mantine/utils@5.8.3":
-  version "5.8.3"
-  resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-5.8.3.tgz#2cc4b5eb9fcd0465e1e29f444b0e3f2413fc564f"
-  integrity sha512-MprJbMh/z3TbC8yPF2PQftitRwl58w7hvhp7O9fT+9jrvJHKM8V7r15iHMwBw2jgX6zmlksstO7QfhENc0vMHQ==
+"@mantine/utils@5.10.4":
+  version "5.10.4"
+  resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-5.10.4.tgz#2160888000eacd05bed6072cb7282646fdb2abbb"
+  integrity sha512-Xrx7Pk+GOwk/0P0qa/JEknZ5AzUBRnD+Ghz1Wu3z4w32NwsNSgq/8YvFVhvxAP7FMbi7Z5xicHzHmhXy1BvZrw==
 
 "@next/env@12.2.4":
   version "12.2.4"
@@ -477,18 +486,18 @@
     "@radix-ui/react-compose-refs" "1.0.0"
     "@radix-ui/react-use-layout-effect" "1.0.0"
 
-"@radix-ui/react-primitive@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@radix-ui/react-primitive/-/react-primitive-1.0.0.tgz#376cd72b0fcd5e0e04d252ed33eb1b1f025af2b0"
-  integrity sha512-EyXe6mnRlHZ8b6f4ilTDrXmkLShICIuOTTj0GX4w1rp+wSxf3+TD05u1UOITC8VsJ2a9nwHvdXtOXEOl0Cw/zQ==
+"@radix-ui/react-primitive@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-primitive/-/react-primitive-1.0.1.tgz#c1ebcce283dd2f02e4fbefdaa49d1cb13dbc990a"
+  integrity sha512-fHbmislWVkZaIdeF6GZxF0A/NH/3BjrGIYj+Ae6eTmTCr7EB0RQAAVEiqsXK6p3/JcRqVSBQoceZroj30Jj3XA==
   dependencies:
     "@babel/runtime" "^7.13.10"
-    "@radix-ui/react-slot" "1.0.0"
+    "@radix-ui/react-slot" "1.0.1"
 
-"@radix-ui/react-scroll-area@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@radix-ui/react-scroll-area/-/react-scroll-area-1.0.0.tgz#10d0262a52266af528798f36947145f7e3a3a52c"
-  integrity sha512-3SNFukAjS5remgtpAVR9m3Zgo23ZojBZ8V3TCyR3A+56x2mtVqKlPV4+e8rScZUFMuvtbjIdQCmsJBFBazKZig==
+"@radix-ui/react-scroll-area@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-scroll-area/-/react-scroll-area-1.0.2.tgz#26c906d351b56835c0301126b24574c9e9c7b93b"
+  integrity sha512-k8VseTxI26kcKJaX0HPwkvlNBPTs56JRdYzcZ/vzrNUkDlvXBy8sMc7WvCpYzZkHgb+hd72VW9MqkqecGtuNgg==
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@radix-ui/number" "1.0.0"
@@ -497,14 +506,14 @@
     "@radix-ui/react-context" "1.0.0"
     "@radix-ui/react-direction" "1.0.0"
     "@radix-ui/react-presence" "1.0.0"
-    "@radix-ui/react-primitive" "1.0.0"
+    "@radix-ui/react-primitive" "1.0.1"
     "@radix-ui/react-use-callback-ref" "1.0.0"
     "@radix-ui/react-use-layout-effect" "1.0.0"
 
-"@radix-ui/react-slot@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@radix-ui/react-slot/-/react-slot-1.0.0.tgz#7fa805b99891dea1e862d8f8fbe07f4d6d0fd698"
-  integrity sha512-3mrKauI/tWXo1Ll+gN5dHcxDPdm/Df1ufcDLCecn+pnCIVcdWE7CujXo8QaXOWRJyZyQWWbpB8eFwHzWXlv5mQ==
+"@radix-ui/react-slot@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-slot/-/react-slot-1.0.1.tgz#e7868c669c974d649070e9ecbec0b367ee0b4d81"
+  integrity sha512-avutXAFL1ehGvAXtPquu0YK5oz6ctS474iM3vNGQIkswrVhdrS52e3uoMQBzZhNRAIE0jBnUyXWNmSjGHhCFcw==
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-compose-refs" "1.0.0"
@@ -1886,6 +1895,11 @@ klaw@^3.0.0:
   dependencies:
     graceful-fs "^4.1.9"
 
+klona@^2.0.5:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.6.tgz#85bffbf819c03b2f53270412420a4555ef882e22"
+  integrity sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==
+
 language-subtag-registry@~0.3.2:
   version "0.3.22"
   resolved "https://registry.yarnpkg.com/language-subtag-registry/-/language-subtag-registry-0.3.22.tgz#2e1500861b2e457eba7e7ae86877cbd08fa1fd1d"
@@ -2655,6 +2669,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+tabbable@^6.0.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-6.1.1.tgz#40cfead5ed11be49043f04436ef924c8890186a0"
+  integrity sha512-4kl5w+nCB44EVRdO0g/UGoOp3vlwgycUVtkk/7DPyeLZUCuNFFKCFG6/t/DgHLrUPHjrZg6s5tNm+56Q2B0xyg==
 
 text-table@^0.2.0:
   version "0.2.0"
