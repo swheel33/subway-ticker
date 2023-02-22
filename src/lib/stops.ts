@@ -5988,16 +5988,3 @@ export const stops = [
     parent_station: "",
   },
 ]
-
-const getUniqueValues = (arr: any[]) =>
-  arr?.filter((element, index, array) => array.indexOf(element) === index)
-
-export const formattedStops = getUniqueValues(
-  stops.map((stop) => stop.stop_name)
-).map((stop, i) => ({ value: (i + 1).toString(), label: stop }))
-
-export const getStopMap = (id: string) =>
-  stops.filter(
-    (stop) =>
-      stop.stop_name === formattedStops.find((stop) => stop.value === id)?.label
-  ).map(stop => stop.stop_id).flat()

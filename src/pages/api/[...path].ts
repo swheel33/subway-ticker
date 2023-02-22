@@ -1,7 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 import gtfs from "gtfs-realtime-bindings"
-import { getStopMap, stops } from "lib/stops"
-const logger = require('pino')
+import { getStopMap, getTrainSet } from "lib/helpers"
 
 const validTrains = [
   "A",
@@ -28,21 +27,7 @@ const validTrains = [
   "7",
 ]
 
-const getTrainSet = (train: string) => {
-  if (["F", "B", "D", "M"].includes(train)) {
-    return "-bdfm"
-  } else if (["N", "Q", "R", "W"].includes(train)) {
-    return "-nqrw"
-  } else if (["A", "C", "E"].includes(train)) {
-    return "-ace"
-  } else if (["J", "Z"].includes(train)) {
-    return "-jz"
-  } else if (train === "G") {
-    return "-g"
-  } else {
-    return ""
-  }
-}
+
 
 export default async function handler(
   req: NextApiRequest,
@@ -110,7 +95,7 @@ export default async function handler(
     .map((data: any) => data?.arrival?.time?.low)
     .filter((data) => data * 1000 > now)
     .sort()
-  logger.info(uptown)
+
   const downtown = stopData
     .map((data) => data?.filter((data) => data?.stopId?.includes("S"))[0])
     .filter((data) => data)
@@ -198,22 +183,6 @@ export default async function handler(
       text: `${finalStops[1].relative} minute${
         finalStops[1].relative !== 1 ? "s" : ""
       }`,
-      x: 31,
-      y: 29,
-      align: "C",
-      size: 2,
-      color: "ffffff",
-    },
-    {
-      text: finalStops[0].absolute,
-      x: 31,
-      y: 20,
-      align: "C",
-      size: 2,
-      color: "ffffff",
-    },
-    {
-      text: finalStops[1].absolute,
       x: 31,
       y: 29,
       align: "C",

@@ -1,5 +1,5 @@
 import { Select, Stack, Text } from "@mantine/core"
-import { formattedStops } from "lib/stops"
+import { formattedStops } from "lib/helpers"
 import { useState } from "react"
 
 export const StopSelect = () => {
