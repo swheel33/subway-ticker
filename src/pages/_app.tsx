@@ -8,8 +8,8 @@ export default function App(props: AppProps) {
   return (
     <>
       <Head>
-        <title>Page title</title>
-        <link rel="shortcut icon" href="/favicon.svg" />
+        <title>NYC Subway Ticker</title>
+        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/3/3c/MTA_NYC_logo.svg" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
@@ -20,7 +20,6 @@ export default function App(props: AppProps) {
         withGlobalStyles
         withNormalizeCSS
         theme={{
-          /** Put your mantine theme override here */
           colorScheme: "dark",
         }}
       >
