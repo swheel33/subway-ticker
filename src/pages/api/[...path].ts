@@ -93,15 +93,14 @@ export default async function handler(
   const uptown = stopData
     .map((data) => data?.filter((data) => data?.stopId?.includes("N"))[0])
     .filter((data) => data)
-    // .map((data: any) => data?.arrival?.time?.low)
-    // .filter((data) => data * 1000 > now)
-    // .sort()
-console.log(uptown)
+    .map((data) => data?.arrival?.time)
+    .filter((data) => data as number * 1000 > now)
+    .sort()
   const downtown = stopData
     .map((data) => data?.filter((data) => data?.stopId?.includes("S"))[0])
     .filter((data) => data)
-    .map((data: any) => data?.arrival?.time?.low)
-    .filter((data) => data * 1000 > now)
+    .map((data) => data?.arrival?.time)
+    .filter((data) => data as number * 1000 > now)
     .sort()
 
   const uptownFormatted = uptown
